@@ -1,6 +1,7 @@
-function calcAge(birthYear, currYear) {
-	age = currYear - birthYear
+function calcAge(birthYear) {
+	currYear = new Date().getFullYear();
+	age = currYear - birthYear;
 	document.write(`You are either ${age} or ${age - 1}.`);
 }
 
-calcAge(1987, 2020)
+calcAge(1987);
