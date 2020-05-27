@@ -1,13 +1,8 @@
-let math = document.getElementByld(math_grade).value
-let physics = document.getElementByld(physics_grade).value
-let english = document.getElementByld(english_grade).value
-
-const grades = function(math, physics, english) {
+function grades() {
+	math = Number(document.getElementById('math_grade').value); // #math_grade
+	physics = Number(document.getElementById('physics_grade').value);
+	english = Number(document.getElementById('english_grade').value);
 	sum = math + physics + english;
 	aver = sum / 3;
 	document.write(`Sum: ${sum} <br> Average: ${aver}`);
 }
-
-grades(math, physics, english);
-
-let result = document.getElementById("result").innerHTML= result;
